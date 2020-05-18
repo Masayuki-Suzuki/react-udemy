@@ -1,6 +1,7 @@
 import React from 'react'
 import unsplash from '../libs/unsplash'
 import SearchBar from './SearchBar'
+import ImageList from './ImageList'
 import { Unsplash } from '~/types/unsplash'
 
 type AppPropsType = {}
@@ -30,6 +31,7 @@ class App extends React.Component<AppPropsType, AppState> {
             <div className="ui container" style={{ marginTop: '10px' }}>
                 <SearchBar onSubmit={this.onSearchSubmit} />
                 <p>Found: {this.state.total} images.</p>
+                <ImageList imaegs={this.state.images} />
             </div>
         )
     }
