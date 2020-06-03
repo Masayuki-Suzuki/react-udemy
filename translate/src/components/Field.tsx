@@ -11,7 +11,7 @@ class Field extends React.Component<FieldPropsType, FieldState> {
         return (
             <div className="ui field">
                 <div>
-                    <label>{this.context === 'english' ? 'Name' : '名前'}:&nbsp;</label>
+                    <label>{this.context.language === 'eng' ? 'Name' : '名前'}:&nbsp;</label>
                 </div>
                 <div className="ui input">
                     <input type="text" placeholder="John Snow" />

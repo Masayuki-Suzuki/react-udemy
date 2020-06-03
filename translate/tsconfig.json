@@ -23,11 +23,6 @@
     "noEmit": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
-    "paths": {
-      "~/*": [
-        "./src/*"
-      ]
-    },
     "removeComments": true,
     "resolveJsonModule": true,
     "sourceMap": true,
