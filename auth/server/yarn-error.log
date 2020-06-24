@@ -1,0 +1,41 @@
+Arguments: 
+  /Users/suzukimasayuki/.nvm/versions/node/v12.16.1/bin/node /Users/suzukimasayuki/.nvm/versions/node/v12.16.1/bin/yarn add typescript express mongoose mrgan body-parser
+
+PATH: 
+  /usr/local/Cellar/git/2.23.0/bin:/usr/local/opt/libxml2/bin:/Users/suzukimasayuki/documents/flutter/flutter/bin:/Users/suzukimasayuki/.nvm/versions/node/v12.16.1/bin:/Users/suzukimasayuki/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/Apple/usr/bin:/Users/suzukimasayuki/local/bin:/Users/suzukimasayuki/.composer/vendor/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/mrgan: Not found
+      at Request.params.callback [as _callback] (/Users/suzukimasayuki/.nvm/versions/node/v12.16.1/lib/node_modules/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/Users/suzukimasayuki/.nvm/versions/node/v12.16.1/lib/node_modules/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:311:20)
+      at Request.<anonymous> (/Users/suzukimasayuki/.nvm/versions/node/v12.16.1/lib/node_modules/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:311:20)
+      at IncomingMessage.<anonymous> (/Users/suzukimasayuki/.nvm/versions/node/v12.16.1/lib/node_modules/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:417:28)
+      at IncomingMessage.emit (events.js:323:22)
+      at endReadableNT (_stream_readable.js:1204:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "0.0.1",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

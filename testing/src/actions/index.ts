@@ -11,7 +11,7 @@ export const saveComment = (payload: string): ActionSaveComment => {
 }
 
 export const fetchComments = (): DispatchFunction => async (dispatch: Dispatch): Promise<void> => {
-    const { data } = await axios.get('https://jsonplaceholder.typicode.com/comments')
+    const { data } = await axios.get('http://jsonplaceholder.typicode.com/comments')
     dispatch({
         type: FETCH_COMMENTS,
         payload: data
