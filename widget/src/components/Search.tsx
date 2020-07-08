@@ -36,6 +36,16 @@ const Search = (): JSX.Element => {
 
     const renderedResult = results.map(result => (
         <div key={result.pageid} className="item">
+            <div className="right floated content">
+                <a
+                    href={`https://en.wikipedia.org?curid=${result.pageid}`}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="ui button"
+                >
+                    Go
+                </a>
+            </div>
             <div className="content">
                 <h3 className="header">{result.title}</h3>
                 <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
