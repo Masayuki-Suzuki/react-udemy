@@ -1,31 +1,64 @@
-import React from 'react'
-import Search from '~/components/Search'
+import React, { useState } from 'react'
+import { DropdownOption } from '~/components/Dropdown'
+import Translate from '~/components/Translate'
 
 export type Item = {
     title: string
     content: string
 }
 
-const items: Item[] = [
+// const items: Item[] = [
+//     {
+//         title: 'What is React?',
+//         content: 'React is a front end javascript framework'
+//     },
+//     {
+//         title: 'Why use React?',
+//         content: 'React is a favourite JS library among engineers'
+//     },
+//     {
+//         title: 'How do you use React?',
+//         content: 'You use React by creating components'
+//     }
+// ]
+
+const options: DropdownOption[] = [
     {
-        title: 'What is React?',
-        content: 'React is a front end javascript framework'
+        label: 'The Colour Red',
+        value: 'red'
     },
     {
-        title: 'Why use React?',
-        content: 'React is a favourite JS library among engineers'
+        label: 'The Colour Green',
+        value: 'green'
     },
     {
-        title: 'How do you use React?',
-        content: 'You use React by creating components'
+        label: 'A Shade of Blue',
+        value: 'blue'
     }
 ]
 
 const App = (): JSX.Element => {
+    const [selected, setSelected] = useState(options[0])
+    const [showDropdown, setShowDropdown] = useState(true)
+
     return (
-        <div className="App">
+        <div className="App" style={{ padding: '24px' }}>
             {/*<Accordion items={items} />*/}
-            <Search />
+            {/*<Search />*/}
+            {/*<div>*/}
+            {/*    <button*/}
+            {/*        onClick={() => setShowDropdown(!showDropdown)}*/}
+            {/*        className="ui button primary"*/}
+            {/*        style={{ marginBottom: '16px' }}*/}
+            {/*    >*/}
+            {/*        Toggle Dropdown*/}
+            {/*    </button>*/}
+            {/*</div>*/}
+            {/*{showDropdown ? <Dropdown options={options} selected={selected} onSelectedChange={setSelected}
+             title={'Select a Colour'}
+             /> :
+             null}*/}
+            <Translate />
         </div>
     )
 }
